@@ -1,0 +1,16 @@
+UNEXPECTED PROBLEMS AND SOLUTIONS
+
+Problem
+- Pure black pixel detection (RGB = 0,0,0) was used in the initial implementation.
+- Some images (e.g., image_2 and image_4) contained slight pixel variations, causing inconsistent recognition of black pixels.
+
+Impact
+- Strict equality checks (RGB == 0) failed to detect lines correctly in JPEGs.
+- Example results:
+	- Image 2 -> detected 5 lines (incorrect).
+	- Image 4 -> detected 8 lines (incorrect).
+- These results did not align with the expected line counts
+
+Solution
+- Introduced a configurable black threshold (default: 50).
+- Pixels with RGB values below the threshold are treated as “black.”

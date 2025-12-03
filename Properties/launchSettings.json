@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BlackLineCountChecker": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Jinto\\Toyota\\BlackLineCountChecker\\images\\img_4.jpg"
+    }
+  }
+}
