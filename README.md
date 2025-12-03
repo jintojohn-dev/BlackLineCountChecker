@@ -30,7 +30,9 @@ Edit appsettings.json to customize the black threshold:
   }
 }
 
-BlackThreshold: RGB value (0-255) below which a pixel is considered black.
+BlackThreshold: 
+- Introduced a configurable black threshold (default: 50).
+- Pixels with RGB values below the threshold are treated as “black.”
                
 
 
